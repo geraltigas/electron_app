@@ -1,0 +1,352 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+body {
+  position: relative;
+  color: white;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  font-family: sans-serif;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#left_and_right {
+  display: flex;
+  flex-direction: row;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#right {
+  width: 1280px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#showTrain {
+  width: 1280px;
+  height: 100% !important;
+  overflow-y: scroll;
+}
+
+#left {
+  width: 120px;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  overflow: hidden;
+}
+
+.Card_1 {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  overflow: hidden;
+}
+
+.Detect {
+  width: 55%;
+  height: 93%;
+  position: relative;
+  left: 30px;
+  top: 25px;
+  margin: 0px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Detect img {
+}
+
+#Tarin {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.Panel {
+  width: 510px;
+  height: 700px;
+  position: relative;
+  left: 50px;
+  color: black;
+  top: 24px;
+}
+
+.HoButtonContainer .HoButton {
+  width: 90px !important;
+  height: 90px !important;
+  background-color: white;
+  transform: scale(1);
+  transition-duration: 0.3s;
+  border-radius: 30px;
+  z-index: 10;
+  background-color: white;
+}
+
+.HoButtonContainer:hover .HoButton {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.HoButtonContainer {
+  width: 90px !important;
+  height: 90px !important;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+
+.HoButtonContainer .text_HoButton {
+  color: black;
+  position: relative;
+  bottom: 30px;
+  z-index: 3;
+}
+
+.HoButtonContainer:hover .text_HoButton {
+}
+
+.text_HoButton:hover {
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+#left_top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 85.5%;
+}
+
+#left_bottom {
+  width: 100%;
+  height: 10%;
+}
+
+#img_HoButton {
+  width: 65px;
+  height: 65px;
+  position: relative;
+  top: 13px;
+  left: 13px;
+}
+
+#AllSports {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.sport {
+  width: 370px;
+  height: 370px;
+  background-color: #f6c668;
+  margin: 10px;
+  margin-right: 30px !important;
+}
+
+.sport .sport_img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 100px;
+  background-color: white;
+  border-radius: 10px;
+  transform: translate(0px, 0px);
+  transition-duration: 0.4s;
+  z-index: 1;
+}
+
+.sport .showText {
+  position: relative;
+  background-color: black;
+  left: 370px;
+  height: 100px;
+  top: 135px;
+  z-index: 100;
+  transform: translate(0px);
+  transition-duration: 0.3s;
+}
+
+.sport:hover .showText {
+  transform: translate(-270px);
+  transition-duration: 0.3s;
+}
+
+.sport .showText div {
+  position: relative;
+  color: white;
+  font-size: 40px;
+  left: 30px;
+  top: 23px;
+}
+
+.sport .showText img {
+  position: relative;
+  bottom: 30px;
+  left: 200px;
+  width: 60px;
+  height: 60px;
+}
+
+.sport:hover .sport_img {
+  transform: translate(50px, 50px);
+  transition-duration: 0.4s;
+}
+
+#return {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 13px;
+  left: 20px;
+  transform: scale(1);
+  transition-duration: 0.3s;
+  z-index:10000;
+}
+
+#return:hover {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+}
+
+#setAmount {
+  z-index: 1;
+  margin: 20px;
+  min-height: 90%;
+}
+
+.scroll {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#addButton {
+  position: absolute;
+  bottom: 27px;
+  left: 33px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+}
+
+#Teach {
+  display: flex;
+  flex-direction: row;
+}
+
+#TrainPanle {
+  display: flex;
+  flex-direction: column;
+}
+
+#DoneRatio {
+  font-size: 55px;
+  margin: 10px;
+  position: relative;
+  left: 60px;
+  font-family: 'Actor', serif;
+}
+
+#GroupDone {
+  margin: 40px!important;
+  width: 85%;
+}
+
+#GroupDone .TextIn {
+  font-family: 'Actor', serif;
+  font-size: 20px;
+}
+
+.SeperateDone {
+  position: relative;
+  left: 100px;
+  top: 80px;
+}
+
+#ErrorLog {
+  width: 90%;
+  height: 200px;
+  margin: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 5px;
+  overflow-y: scroll;
+  border-radius: 8px;
+}
+
+.Error {
+  font: 20px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+  color: red;
+  font-weight: 700;
+}
+
+#Teach {
+  width:100%;
+  height: 100%;
+}
+
+#videoPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#description {
+  padding: 30px;
+}
+
+video {
+  object-fit:fill;
+}
+
+.videoButton {
+  position: absolute;
+  top: 650px;
+  right: 100px;
+}
+
+@keyframes change_to_active {
+  from {
+  }
+
+  to {
+    background-color: #e1e1e1;
+  }
+}
+
+@keyframes change_to_imactive {
+  from {
+    background-color: #e1e1e1;
+  }
+
+  to {
+  }
+}
